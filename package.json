@@ -1,0 +1,45 @@
+{
+  "name": "stack-data",
+  "version": "1.0.0",
+  "description": "Simple stack implementation on es6",
+  "main": "index.es5.js",
+  "scripts": {
+    "coverage": "isparta cover _mocha index.js --include-all-sources -- --require babel-core/register",
+    "precoveralls": "npm run coverage",
+    "coveralls": "coveralls < coverage/lcov.info",
+    "test": "mocha --require babel-core/register",
+    "tdd": "npm test -- --watch",
+    "transpile": "babel index.js --out-file index.es5.js",
+    "prepublish": "npm run transpile",
+    "clean": "rimraf index.es5.js",
+    "push": "git push --follow-tags",
+    "postpublish": "npm-run-all clean push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greybax/stack-data/.git"
+  },
+  "keywords": [
+    "stack",
+    "data",
+    "structure"
+  ],
+  "author": "Aleksandr Filatov <greybax@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greybax/stack-data/issues"
+  },
+  "homepage": "https://github.com/greybax/stack-data#readme",
+  "devDependencies": {
+    "assert": "*",
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "coveralls": "*",
+    "isparta": "*",
+    "mocha": "*",
+    "npm-run-all": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {}
+}
