@@ -53,7 +53,7 @@ Type: `Object`
 
 ## License
 
-MIT © Aleksandr Filatov <greybax@gmail.com>
+MIT © Aleksandr Filatov <greybax@gmail.com> 
 
 [npm-url]: https://npmjs.org/package/stack-data
 [npm-image]: https://img.shields.io/npm/v/stack-data.svg?style=flat-square
