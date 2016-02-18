@@ -14,8 +14,19 @@
 
 ## Usage
 
+### 2 ways for adding element in stack:
+
+* in constructor ```new Stack(1,"2",3,[4, 5],6);```
+* via ```push(elem)``` method
+
 ```js
 // Examples of using stack-data
+
+//Added stack elements in constructor
+let preInitStack = new Stack(1,"2",3,[4, 5],6);
+preInitStack.size;       //5
+
+//Added elements classically via push()
 let stack = new Stack();
 stack.size;              //0
 stack.push(1).push("2");

@@ -4,11 +4,15 @@ import { Stack, StackException } from "../index";
 import { equal, throws } from 'assert';
 
 let stack = new Stack();
+let preInitStack = new Stack(1,"2",3,[4, 5],6);
 
 describe("Stack", function _describeStack(){
     describe("init", function _describeInit(){
         it("should be stack empty", function _it() {
             equal(0, stack.size);
+        });
+        it("should be size 5 for pre init stack", function _it() {
+            equal(5, preInitStack.size);
         });
     });
     describe("push", function _describePush(){

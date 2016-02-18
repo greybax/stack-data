@@ -1,6 +1,6 @@
 {
   "name": "stack-data",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple stack implementation on es6",
   "main": "index.es5.js",
   "scripts": {

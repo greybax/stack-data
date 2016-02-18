@@ -15,8 +15,9 @@ export class Stack {
     /**
      * Initialize stack as empty.
      */
-    constructor() {
+    constructor(...elements) {
         this._stack = [];
+        this._stack.push(...elements);
         this._lastIndex = 0;
     }
     
