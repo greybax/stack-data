@@ -29,7 +29,6 @@ export class Stack {
     push(elem) {
         if (!elem) {
             throw new StackException("Parameter should not be empty");
-            return;
         }
         if (this._stack.length === 0) {
             this._stack[0] = elem;
@@ -37,7 +36,7 @@ export class Stack {
         }
         else
             this._stack[this._lastIndex++] = elem;
-            
+
         return this;
     }
     
@@ -48,7 +47,6 @@ export class Stack {
     pop() {
         if (this._stack.length === 0) {
             throw new StackException("Stack is empty");
-            return;
         }
         
         this._lastIndex = this._stack.length - 1;
@@ -56,7 +54,7 @@ export class Stack {
         this._stack.splice(this._lastIndex, 1);
         return elem;
     }
-   
+
     /**
      * Peeks at the top element of the stack. Throws an ```Error``` when the stack is empty.
      * @return {object} elem - object which will be picked from stack.
@@ -64,7 +62,6 @@ export class Stack {
     peek() {
         if (this._stack.length === 0) {
             throw new StackException("Stack is empty");
-            return;
         }
         
         return this._stack[this._lastIndex];

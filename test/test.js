@@ -41,7 +41,7 @@ describe("Stack", function _describeStack(){
         });
         it("should be throw an exception", function _it() {
             stack.pop();
-            throws(() => stack.pop(), StackException );
+            throws(() => stack.peek(), StackException );
         });
     });
 });
