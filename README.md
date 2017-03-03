@@ -19,6 +19,18 @@
 * in constructor ```new Stack(1,"2",3,[4, 5],6);```
 * via ```push(elem)``` method
 
+Also supports chaining mechanism like:
+
+```js
+ new Stack()
+ .push(1)
+ .push(2)
+ .push(3)
+ .push(4)
+ 
+ // creates object with 4 elements 1,2,3,4
+```
+
 ```js
 // Examples of using stack-data
 
